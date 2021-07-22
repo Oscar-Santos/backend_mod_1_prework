@@ -3,7 +3,7 @@
 # file by entering the following command in your terminal:
 # `ruby section2/exercises/if_statements.rb`
 
-# Example: Using the weather variable below, write code that decides 
+# Example: Using the weather variable below, write code that decides
 # what you should take with you based on the following conditions:
   # if it is sunny, print "sunscreen"
   # if it is rainy, print "umbrella"
@@ -27,29 +27,84 @@
 # Experiment with manipulating the value held in variable 'weather'
 # to print something other than 'coat'
 
+weather = "icy"
+
+if weather == 'sunny'
+  puts "sunscreen"
+elsif weather == 'rainy'
+  puts "umbrella"
+elsif weather == 'snowy'
+  puts "coat"
+elsif weather == 'icy'
+  puts "yak traks"
+else
+  puts "good to go!"
+end
+
 
 ##################
 # Using the num_quarters variable defined below, determine
 # if you have enough money to buy a gumball. A gumball costs
 # two quarters.
+num_quarters = 0
+
+if num_quarters >= 2
+puts "I have enough money for a gumball."
+else
+puts "I don't have enough money for a gumball."
+end
 
 # Right now, the program will print
 # out both "I have enough money for a gumball" and
-# "I don't have enough money for a gumball". Write a 
+# "I don't have enough money for a gumball". Write a
 # conditional statement that prints only one or the other.
+num_quarters = 5
+
+if num_quarters >= 2
+puts "I have enough money for a gumball."
+else
+puts "I don't have enough money for a gumball."
+end
 
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
+# Situation 1: (where i don't have enough money for a gumball)
+def num_quarters(quarters)
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
+  if quarters > 2
+  puts "I have more than enough money for a gumball! yay!"
+
+  elsif quarters == 2
+  puts "I barely made it to buy my gumball"
+
+  else quarters < 2
+  puts "It sucks, no gumball today for me."
+  end
+end
+
+num_quarters(1)
+
+# Situation 2 (Where i have enough money for a gumball)
+def num_quarters(quarters)
+
+  if quarters > 2
+  puts "I have more than enough money for a gumball! yay!"
+
+  elsif quarters == 2
+  puts "I barely made it to buy my gumball"
+
+  else quarters < 2
+  puts "It sucks, no gumball today for me"
+  end
+end
+
+num_quarters(4)
 
 
 #####################
 # Using the variables defined below, write code that will tell you
-# if you have the ingredients to make a pizza. A pizza requires 
+# if you have the ingredients to make a pizza. A pizza requires
 # at least two cups of flour and sauce.
 
 # You should be able to change the variables to achieve the following outputs:
@@ -61,5 +116,45 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
+# Example 1
 cups_of_flour = 1
 has_sauce = true
+
+if has_sauce ==true && cups_of_flour >= 2
+  puts "I can make a pizza"
+else has_sauce == false && cups_of_flour < 2
+  puts "I cannot make a pizza"
+end
+
+
+# Example 2
+cups_of_flour = 5
+has_sauce = false
+
+if has_sauce ==true && cups_of_flour >= 2
+  puts "I can make a pizza"
+else has_sauce == false && cups_of_flour < 2
+  puts "I cannot make a pizza"
+end
+
+
+# Example 3
+cups_of_flour = 2
+has_sauce = true
+
+if has_sauce ==true && cups_of_flour >= 2
+  puts "I can make a pizza"
+else has_sauce == false && cups_of_flour < 2
+  puts "I cannot make a pizza"
+end
+
+
+# Example 4
+cups_of_flour = 3
+has_sauce = true
+
+if has_sauce ==true && cups_of_flour >= 2
+  puts "I can make a pizza"
+else has_sauce == false && cups_of_flour < 2
+  puts "I cannot make a pizza"
+end

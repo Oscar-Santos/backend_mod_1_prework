@@ -5,27 +5,44 @@
 
 # Example: Write a method that when called will print your name:
 def print_name
-  p "Severus Snape"
+  puts "Oscar Santos"
 end
 
 print_name
 
 # Write a method that takes a name as an argument and prints it:
 def print_name(name)
-  # YOUR CODE HERE
+  puts name
 end
 
 print_name("Albus Dumbledore")
 
-# Write a method that takes in 2 numbers as arguments and prints 
+# Write a method that takes in 2 numbers as arguments and prints
 # their sum. Then call your method three times with different arguments passed in:
-# YOUR CODE HERE
 
-# Write a method that takes in two strings as arguments and prints 
-# a concatenation of those two strings. Example: The arguments could be 
-# (man, woman) and the end result might output: "When Harry Met Sally".  
-# Then call your method three times with different arguments passed in. 
+def print_num x, y
+  puts x + y
+end
 
+print_num 4, 5
+print_num 3, 8
+print_num 9, 9
+
+
+
+# Write a method that takes in two strings as arguments and prints
+# a concatenation of those two strings. Example: The arguments could be
+# (man, woman) and the end result might output: "When Harry Met Sally".
+# Then call your method three times with different arguments passed in.
+
+
+def gender man, woman
+puts "It was a sunny day when #{man} met #{woman}."
+end
+
+gender "Harry", "Sally"
+gender "Peter", "Laura"
+gender "Charles", "Susan"
 
 #-------------------
 # PART 3: Naming is Hard
@@ -39,3 +56,5 @@ print_name("Albus Dumbledore")
 
 # EXPLAIN:
 
+# I named the method GENDER, because the task was going to be about a man and a woman.
+# I named each parameter similar to the example, 1 name of a man and 1 name of a woman (3 times).
